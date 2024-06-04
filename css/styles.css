@@ -1,0 +1,80 @@
+/* Estilo general */
+body {
+    background-color: #1e1e2e; /* Color de fondo del cuerpo */
+    margin: 0; /* Sin margen alrededor del cuerpo */
+    font-family: 'Arial', sans-serif; /* Familia de fuentes del texto */
+    color: #ffffff; /* Color del texto */
+    display: flex; /* Establece el contenedor como flexbox */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: center; /* Alinea los elementos en el centro del eje transversal */
+    justify-content: center; /* Alinea los elementos en el centro del eje principal */
+    height: 100vh; /* Altura del contenedor igual a la altura de la ventana gráfica */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #000000; /* Color de fondo del encabezado */
+    width: 100%; /* Ancho completo */
+    padding: 20px 0; /* Relleno arriba y abajo de 20px, sin relleno a los lados */
+    text-align: center; /* Alineación del texto al centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro con desplazamiento y desenfoque */
+}
+
+header h1 {
+    color: #28a745; /* Color del texto */
+    margin: 0; /* Sin margen alrededor del texto */
+    font-size: 2.5em; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilo del contenido principal */
+main {
+    background-color: #2e2e4d; /* Color de fondo del contenedor principal */
+    padding: 40px 20px; /* Relleno de 40px arriba y abajo, 20px a los lados */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto al centro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro con desplazamiento y desenfoque */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    width: 90%; /* Ancho del contenedor como porcentaje del contenedor padre */
+}
+
+.intro, .message, .instruction, .cost, .info, .details {
+    margin: 20px 0; /* Margen arriba y abajo de 20px */
+    font-size: 1.2em; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* Estilo del botón */
+button.home, button.alquilar, button.connect {
+    background-color: #007BFF; /* Color de fondo del botón */
+    padding: 15px 30px; /* Relleno del botón */
+    font-size: 1.5em; /* Tamaño de fuente del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el cambio de color y transformación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+}
+
+button.home:hover, button.alquilar:hover, button.connect:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+    transform: scale(1.05); /* Escala del botón al pasar el cursor */
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) { /* Consulta de medios para pantallas con ancho máximo de 600px */
+    header h1 {
+        font-size: 2em; /* Tamaño de fuente reducido */
+    }
+
+    main {
+        padding: 20px; /* Relleno reducido */
+    }
+
+    button.home, button.alquilar, button.connect {
+        width: 100%; /* Ancho del botón como porcentaje del contenedor padre */
+        font-size: 1.2em; /* Tamaño de fuente reducido */
+    }
+}
