@@ -8,19 +8,21 @@ body {
     flex-direction: column; /* Dirección de los elementos en columna */
     align-items: center; /* Alinea los elementos en el centro del eje transversal */
     justify-content: center; /* Alinea los elementos en el centro del eje principal */
-    height: 100vh; /* Altura del contenedor igual a la altura de la ventana gráfica */
+}
+
+.simagen {
+    width: 5%;
+    position: relative;
+    
 }
 
 /* Estilo del encabezado */
 header {
     background-color: #000000; /* Color de fondo del encabezado */
     width: 100%; /* Ancho completo */
-    padding: 20px 0; /* Relleno arriba y abajo de 20px, sin relleno a los lados */
-    text-align: center; /* Alineación del texto al centro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro con desplazamiento y desenfoque */
 }
 
-header h1 {
+h1 {
     color: #28a745; /* Color del texto */
     margin: 0; /* Sin margen alrededor del texto */
     font-size: 2.5em; /* Tamaño de fuente */
@@ -37,6 +39,16 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro con desplazamiento y desenfoque */
     max-width: 600px; /* Ancho máximo del contenedor */
     width: 90%; /* Ancho del contenedor como porcentaje del contenedor padre */
+    position: relative;
+    top: 60px;
+}
+
+/* Estilo del encabezado */
+footer {
+    background-color: #000000; /* Color de fondo del encabezado */
+    width: 100%; /* Ancho completo */
+    position: relative;
+    top: 65px;
 }
 
 .intro, .message, .instruction, .cost, .info, .details {
@@ -46,7 +58,7 @@ main {
 }
 
 /* Estilo del botón */
-button.home, button.alquilar, button.connect {
+button.home, button.alquilar, button.connect, button.alquilar2, button.connect2 {
     background-color: #007BFF; /* Color de fondo del botón */
     padding: 15px 30px; /* Relleno del botón */
     font-size: 1.5em; /* Tamaño de fuente del botón */
@@ -58,9 +70,21 @@ button.home, button.alquilar, button.connect {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del botón */
 }
 
-button.home:hover, button.alquilar:hover, button.connect:hover {
+button.home:hover, button.alquilar:hover, button.connect:hover, button.alquilar2:hover, button.connect2:hover {
     background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
     transform: scale(1.05); /* Escala del botón al pasar el cursor */
+}
+
+.alquilar {
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+}
+
+.connect {
+    position: relative;
+    bottom: 20px;
+    left: 120px;
 }
 
 /* Adaptación a pantallas pequeñas */
